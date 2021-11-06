@@ -18,9 +18,14 @@ body{
 .hidden{
     display: none;
 }
+.mini{
+    height: 56px !important;
+}
 
 .header-area{
-    padding: 12px 16px;
+    transition: all ease-in-out 0.7s;
+
+    padding: 10px 16px;
     margin: 0px;
     box-sizing: border-box;
 
@@ -31,6 +36,7 @@ body{
     background-color: var(--bg-color);
 
     width: 100vw;
+    height: 56px;
 }
 .header-area__logo{
     display: flex;
@@ -73,6 +79,7 @@ body{
     .header-area{
         flex-direction: column;
         align-items: flex-start;
+        height: 276px;
     }
     .header-area__menu{
         width: 100%;
