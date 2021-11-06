@@ -1,0 +1,105 @@
+:root{
+    --text-color : white;
+    --accent-color : salmon;
+    --bg-color : slategray;
+}
+html{
+    color: sal;
+    font-family : 'Mochiy Pop One';
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+body{
+    margin: 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.header-area{
+    padding: 12px 16px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bg-color);
+
+    width: 100vw;
+}
+.header-area__logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.header-area__logo i{
+    font-size: 25px;
+    margin-right: 5px;
+    color:var(--accent-color);
+}
+.header-area__logo span{
+    font-size: 25px;
+}
+
+.header-area__menus{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-area__menu-list{
+    font-size: 16px;
+    margin : 0px 5px;
+}
+.header-area__icons{
+    color: var(--text-color);
+}
+.header-area__icons i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.header-area__bars{
+    display: none;
+}
+@media screen and (max-width : 650px)
+{
+    .header-area{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header-area__menu{
+        width: 100%;
+        text-align: center;
+    }
+    .header-area__menus{
+        padding: 30px 0px;
+        flex-direction: column;
+    }
+    .header-area__menu-list{
+        padding: 5px 0px;
+    }
+    .header-area__icons
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .header-area__bars{
+        display: flex;
+        align-items: center;
+
+        position: absolute;
+        top: 0px;
+        right: 16px;
+        font-size: 25px;
+
+        height: 60px;
+        color: var(--accent-color);
+    }
+}
