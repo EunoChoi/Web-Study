@@ -81,7 +81,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        height: 476px;
+        height: 276px;
     }
     .header-area__menu{
         width: 100%;
