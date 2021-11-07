@@ -7,7 +7,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding : 15px;
+    padding : 10px;
 
     background-color: black;
     color: white;
@@ -143,9 +143,16 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .nextVideo__text__title{
     font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
 }
 .nextVideo__text__uploader, .nextVideo__text__viewCount{
     color: gray;
