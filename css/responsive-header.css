@@ -23,7 +23,7 @@ body{
 }
 
 .header-area{
-    transition: all ease-in-out 0.7s;
+    transition: all ease-in-out 0.5s;
 
     padding: 10px 16px;
     margin: 0px;
@@ -36,7 +36,8 @@ body{
     background-color: var(--bg-color);
 
     width: 100vw;
-    height: 56px;
+    height: auto;
+    /*auto일때 높이를 이용*/
 }
 .header-area__logo{
     display: flex;
@@ -78,8 +79,9 @@ body{
 {
     .header-area{
         flex-direction: column;
+        justify-content: space-between;
         align-items: flex-start;
-        height: 276px;
+        height: 476px;
     }
     .header-area__menu{
         width: 100%;
@@ -108,5 +110,16 @@ body{
 
         height: 60px;
         color: var(--accent-color);
+    }
+}
+/*작아졌을때 햄버거 메뉴를 눌어서 메뉴와 아이콘이 사라졌더라도
+화면이 다시 커지면 다시 나타나야 한다*/
+@media screen and (min-width : 651px)
+{
+    .header-area__menu{
+        display: flex;
+    }
+    .header-area__icons{
+        display: flex;
     }
 }
