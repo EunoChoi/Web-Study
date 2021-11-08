@@ -28,10 +28,23 @@ header{
     height: 40px;
     border-radius: 50%;
 }
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: black;
 
-.main .player{
     width: 100%;
-    height: calc(100vw * (9/16));
+    height: 100%;
+}
+iframe{
+    width: 100%;
+    height: calc(100vw * 9 / 16);
+    
+    position: sticky;
+    top: 0px;
+
+    max-width: 768px;
+    max-height: calc(768px * 9 / 16);
 }
 
 .sub{
@@ -54,6 +67,11 @@ header{
 }
 
 .info__title .info__title__name{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
     font-size: 24px;
     padding : 5px 0px;
 }
@@ -148,11 +166,13 @@ header{
     text-overflow: ellipsis;
 }
 .nextVideo__text__title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
     font-weight: 600;
     width: 100%;
-    white-space: nowrap;
-    overflow : hidden;
-    text-overflow: ellipsis;
 }
 .nextVideo__text__uploader, .nextVideo__text__viewCount{
     color: gray;

@@ -28,11 +28,12 @@
     </header>
 
     <div class="main">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/67stn7Pu7s4" title="YouTube video player"
-            class="player" frameborder="0"
+        <iframe id="player" src="https://www.youtube.com/embed/67stn7Pu7s4" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen onload="calcHeight();">
+        </iframe>
     </div>
+
 
     <div class="sub">
         <section class="info">
@@ -46,28 +47,28 @@
                 <div class="info__title__subinfo">
                     1M views 1 month ago
                 </div>
-                <div class="info__title__actions">
-                    <div class="icon">
+                <ul class="info__title__actions">
+                    <li class="icon">
                         <i class="fas fa-thumbs-up"></i>
                         <span class="icon__name">1K</span>
-                    </div>
-                    <div class="icon">
+                    </li>
+                    <li class="icon">
                         <i class="fas fa-thumbs-down"></i>
                         <span class="icon__name">0</span>
-                    </div>
-                    <div class="icon">
+                    </li>
+                    <li class="icon">
                         <i class="fas fa-share"></i>
                         <span class="icon__name">Share</span>
-                    </div>
-                    <div class="icon">
+                    </li>
+                    <li class="icon">
                         <i class="fas fa-plus"></i>
                         <span class="icon__name">Save</span>
-                    </div>
-                    <div class="icon">
+                    </li>
+                    <li class="icon">
                         <i class="fas fa-flag"></i>
                         <span class="icon__name">Report</span>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
             <div class="info__subscribe">
                 <div class="info__subscribe__view">
@@ -91,65 +92,68 @@
 
         <section class="upNext">
             <span class="upNextText">Up Next</span>
-            <div class="nextVideo">
-                <div class="nextVideo__thumnail">
-                    <img src="img/thumnail.png" alt="">
-                </div>
-                <div class="nextVideo__text">
-                    <div class="nextVideo__text__title">
-                        프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+            <ul class="nextVideoLists">
+                <li class="nextVideo">
+                    <div class="nextVideo__thumnail">
+                        <img src="img/thumnail.png" alt="">
                     </div>
-                    <div class="nextVideo__text__uploader">
-                        드림코딩 by 앨리
+                    <div class="nextVideo__text">
+                        <div class="nextVideo__text__title">
+                            프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+                        </div>
+                        <div class="nextVideo__text__uploader">
+                            드림코딩 by 앨리
+                        </div>
+                        <div class="nextVideo__text__viewCount">
+                            82K views
+                        </div>
                     </div>
-                    <div class="nextVideo__text__viewCount">
-                        82K views
+                    <div class="nextVideo__menu">
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
-                </div>
-                <div class="nextVideo__menu">
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
-            </div>
+                </li>
 
-            <div class="nextVideo">
-                <div class="nextVideo__thumnail">
-                    <img src="img/thumnail.png" alt="">
-                </div>
-                <div class="nextVideo__text">
-                    <div class="nextVideo__text__title">
-                        프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+                <li class="nextVideo">
+                    <div class="nextVideo__thumnail">
+                        <img src="img/thumnail.png" alt="">
                     </div>
-                    <div class="nextVideo__text__uploader">
-                        드림코딩 by 앨리
+                    <div class="nextVideo__text">
+                        <div class="nextVideo__text__title">
+                            프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+                        </div>
+                        <div class="nextVideo__text__uploader">
+                            드림코딩 by 앨리
+                        </div>
+                        <div class="nextVideo__text__viewCount">
+                            82K views
+                        </div>
                     </div>
-                    <div class="nextVideo__text__viewCount">
-                        82K views
+                    <div class="nextVideo__menu">
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
-                </div>
-                <div class="nextVideo__menu">
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
-            </div>
+                </li>
 
-            <div class="nextVideo">
-                <div class="nextVideo__thumnail">
-                    <img src="img/thumnail.png" alt="">
-                </div>
-                <div class="nextVideo__text">
-                    <div class="nextVideo__text__title">
-                        프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+                <li class="nextVideo">
+                    <div class="nextVideo__thumnail">
+                        <img src="img/thumnail.png" alt="">
                     </div>
-                    <div class="nextVideo__text__uploader">
-                        드림코딩 by 앨리
+                    <div class="nextVideo__text">
+                        <div class="nextVideo__text__title">
+                            프론트엔드 강의, 프론트엔드 개발자가 되고 싶다면? 웹개발자 입문자 강의를 시작합니다!
+                        </div>
+                        <div class="nextVideo__text__uploader">
+                            드림코딩 by 앨리
+                        </div>
+                        <div class="nextVideo__text__viewCount">
+                            82K views
+                        </div>
                     </div>
-                    <div class="nextVideo__text__viewCount">
-                        82K views
+                    <div class="nextVideo__menu">
+                        <i class="fas fa-ellipsis-v"></i>
                     </div>
-                </div>
-                <div class="nextVideo__menu">
-                    <i class="fas fa-ellipsis-v"></i>
-                </div>
-            </div>
+                </li>
+            </ul>
+
         </section>
     </div>
 
